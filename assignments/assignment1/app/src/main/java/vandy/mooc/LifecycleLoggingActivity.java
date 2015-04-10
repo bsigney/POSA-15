@@ -56,7 +56,8 @@ public abstract class LifecycleLoggingActivity extends Activity {
     protected void onStart(){
         // Always call super class for necessary
         // initialization/implementation.
-        // TODO - you fill in here.
+        super.onStart();
+        Log.i(TAG, "Entered the onStart() method");
     }
 	
     /**
@@ -73,7 +74,8 @@ public abstract class LifecycleLoggingActivity extends Activity {
         // Always call super class for necessary
         // initialization/implementation and then log which lifecycle
         // hook method is being called.
-        // TODO - you fill in here.
+        super.onResume();
+        Log.i(TAG, "Entered the onResume() method");
     }
 	
     /**
@@ -89,7 +91,8 @@ public abstract class LifecycleLoggingActivity extends Activity {
         // Always call super class for necessary
         // initialization/implementation and then log which lifecycle
         // hook method is being called.
-        // TODO - you fill in here.
+        super.onPause();
+        Log.i(TAG, "Entered the onPause() method");
     }
 	
     /**
@@ -102,7 +105,8 @@ public abstract class LifecycleLoggingActivity extends Activity {
         // Always call super class for necessary
         // initialization/implementation and then log which lifecycle
         // hook method is being called.
-        // TODO - you fill in here.
+        super.onStop();
+        Log.i(TAG, "Entered the onStop() method");
     }
 	
     /**
@@ -114,7 +118,8 @@ public abstract class LifecycleLoggingActivity extends Activity {
         // Always call super class for necessary
         // initialization/implementation and then log which lifecycle
         // hook method is being called.
-        // TODO - you fill in here.
+        super.onRestart();
+        Log.i(TAG, "Entered the onRestart() method");
     }
 	
     /**
@@ -127,6 +132,7 @@ public abstract class LifecycleLoggingActivity extends Activity {
         // Always call super class for necessary
         // initialization/implementation and then log which lifecycle
         // hook method is being called.
-        // TODO - you fill in here.
+        super.onDestroy();
+        Log.i(TAG, "Entered the onDestroy() method");
     }
 }
